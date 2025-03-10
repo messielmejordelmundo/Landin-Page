@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos básicos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="stylelandin.css">
+    <!-- Título de la página -->
+    <title>Descubre la magia de Argentina</title>
+</head>
+
+<body>
+    <!-- Sección de Hero: sección principal de la página -->
+    <header class="hero">
+        <h1>Descubre la magia de Argentina</h1>
+        <p>Explora los lugares más increíbles y vive experiencias únicas.</p>
+    </header>
+
+    <!-- Sección de Destacados: muestra los lugares destacados -->
+    <section class="destacados">
+        <!-- Destacado 1: Iguazú -->
+        <a class="destacado">
+            <img src="iguazu.jpg" alt="Lugar 1">
+            <h2>Iguazú</h2>
+            <p>Las cataratas de Iguazú, una de las maravillas naturales más impresionantes del mundo. Ubicadas en la
+                frontera entre Argentina y Brasil, estas cataratas son un destino imperdible para cualquier viajero.</p>
+            <button onclick="location.href='detalles_iguazu.html'">Más detalles</button>
+        </a>
+        <!-- Destacado 2: Patagonia -->
+        <a class="destacado">
+            <img src="patagonia.jpg" alt="Lugar 2">
+            <h2>Patagonia</h2>
+            <p>La región de Patagonia, conocida por sus paisajes naturales impresionantes, incluyendo glaciares,
+                montañas y lagos. Un destino ideal para los amantes de la naturaleza y la aventura.</p>
+            <button onclick="location.href='detallespatagonia.html'">Más detalles</button>
+        </a>
+        <!-- Destacado 3: Buenos Aires -->
+        <a class="destacado">
+            <img src="buenos-aires.jpg" alt="Lugar 3">
+            <h2>Buenos Aires</h2>
+            <p>La ciudad de Buenos Aires, conocida por su arquitectura europea, su vida nocturna y su cultura vibrante.
+                Un destino perfecto para aquellos que buscan una experiencia urbana única.</p>
+            <button onclick="location.href='detallesbuenosaires.html'">Más detalles</button>
+        </a>
+        <!-- Destacado 4: Mendoza -->
+        <a class="destacado">
+            <img src="mendoza.jpg" alt="Lugar 4">
+            <h2>Mendoza</h2>
+            <p>La región de Mendoza, conocida por sus viñedos y su producción de vino. Un destino ideal para los amantes
+                del vino y la gastronomía.</p>
+            <button onclick="location.href='detallesmendoza.html'">Más detalles</button>
+        </a>
+    </section>
+
+    <!-- Sección de Experiencias: muestra experiencias únicas en Argentina -->
+    <section class="experiencias">
+        <!-- Experiencia 1: Asado en un estancia -->
+        <a class="experiencia">
+            <img src="asados.jpg" alt="Experiencia 1">
+            <h2>Asado en un estancia</h2>
+            <p>Disfruta de un asado tradicional argentino en un estancia (rancho) auténtico. Una experiencia única
+                para conocer la cultura y la gastronomía argentina.
+            </p>
+            <button onclick="location.href='detallesasado.html'">Más detalles</button>
+        </a>
+        <!-- Experiencia 2: Recorrido por la ciudad de Buenos Aires -->
+        <a class="experiencia">
+            <img src="plaza.jpg" alt="Experiencia 2">
+            <h2>Recorrido por la ciudad de Buenos Aires</h2>
+            <p> Descubre la ciudad de Buenos Aires en un recorrido guiado que te llevará por sus lugares más
+                emblemáticos, como la Plaza de Mayo y el Teatro Colón.</p>
+            <button onclick="location.href='detallestour.html'">Más detalles</button>
+        </a>
+        <!-- Experiencia 3: Paseo en barco por los glaciares de Patagonia -->
+        <a class="experiencia">
+            <img src="glaciares.jpeg" alt="Experiencia 3">
+            <h2>Paseo en barco por los glaciares de Patagonia</h2>
+            <p>Admira la belleza natural de los glaciares de Patagonia en un paseo en barco que te dejará sin aliento.
+                Una experiencia única para conectarte con la naturaleza</p>
+            <button onclick="location.href='detallespaseo.html'">Más detalles</button>
+        </a>
+    </section>
+    <!-- Sección de Contacto: formulario para que los visitantes puedan contactarte -->
+    <section class="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <!-- Campo de nombre -->
+            <a class="formgroup">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </a>
+            <!-- Campo de correo electrónico -->
+            <a class="formgroup">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            </a>
+            <!-- Campo de mensaje -->
+            <a class="formgroup">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            </a>
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!-- Pie de página: información adicional y créditos -->
+    <footer>
+        <p>© 2025 Descubre la magia de Argentina</p>
+        <p>Hecho por: Santiago Figueroa</p>
+        <p>@Sanrulitos</p>
+    </footer>
+</body>
+
+</html>

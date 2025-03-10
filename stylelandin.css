@@ -1,0 +1,159 @@
+body {
+    font-family:'Times New Roman', Times, serif; /* Fuente de la página */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para las secciones principales */
+header, section, footer {
+    padding: 20px; /* Relleno para las secciones */
+}
+
+/* Estilos para el encabezado */
+header {
+    position: relative; /* Añadir posición relativa */
+    color: white; /* Color del texto del encabezado */
+    text-align: center; /* Alinear texto al centro */
+    padding: 20px 0; /* Relleno superior e inferior */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+header::before {
+    content: ''; /* Contenido vacío */
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Posición superior */
+    left: 0; /* Posición izquierda */
+    right: 0; /* Posición derecha */
+    bottom: 0; /* Posición inferior */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    z-index: 1; /* Asegurar que esté debajo del texto */
+}
+
+header h1, header p {
+    position: relative; /* Posición relativa */
+    z-index: 2; /* Asegurar que el texto esté por encima del fondo negro */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    text-align: center; /* Alinear texto al centro */
+    padding: 5px 40px; /* Relleno del pie de página */
+    font-size: 14px; /* Tamaño de fuente del pie de página */
+    display: flex; /* Usar flexbox */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Estilos para la sección de Hero */
+.hero {
+    background-image: url('argentina-4560267_1280.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el fondo */
+    background-position: center; /* Centrar la imagen */
+    height: 50vh; /* Altura de la sección */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Dirección de los elementos */
+    justify-content: center; /* Centrar elementos verticalmente */
+    align-items: center; /* Centrar elementos horizontalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilos para las secciones de Destacados y Experiencias */
+.destacados, .experiencias {
+    display: flex; /* Usar flexbox */
+    flex-wrap: row wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: space-around; /* Espacio alrededor de los elementos */
+}
+
+.destacado img, .experiencia img {
+    width: 100%; /* Ajustar el ancho de las imágenes */
+    height: 300px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Cubrir el contenedor manteniendo la proporción */
+    margin-bottom: 10px; /* Añadir margen inferior */
+}
+
+.destacado, .experiencia {
+    flex: 1 1 30%; /* Ajustar el tamaño de los elementos */
+    margin: 20px; /* Margen alrededor de los elementos */
+    padding: 20px; /* Relleno dentro de los elementos */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra para los elementos */
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Dirección de los elementos */
+    align-items: center; /* Centrar elementos horizontalmente */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.destacado p, .experiencia p {
+    text-align: justify; /* Justificar texto */
+}
+
+.destacado button, .experiencia button {
+    margin-top: 10px; /* Añadir margen superior */
+    align-self: center; /* Alinear botón al centro */
+    object-fit: cover; /* Cubrir el contenedor manteniendo la proporción */
+    padding: 5px 10px; /* Relleno dentro del botón */
+    display: block; /* Mostrar como bloque */
+    width: 40%; /* Ancho completo */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+
+.destacado button:hover, .experiencia button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar sobre el botón */
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Relleno dentro del contenedor */
+    background-color: #f9f9f9; /* Color de fondo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el formulario de contacto */
+}
+
+.contacto h2 {
+    text-align: center; /* Alinear texto al centro */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.formgroup {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+.formgroup label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Margen inferior */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+.formgroup input,
+.formgroup textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno dentro del campo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+    display: block; /* Mostrar como bloque */
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Relleno dentro del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo al pasar sobre el botón */
+}
+
